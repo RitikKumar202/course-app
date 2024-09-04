@@ -1,0 +1,31 @@
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px !important;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.search-bar input:focus,
+input:hover {
+    border: 2px solid #007bff !important;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    .search-bar input {
+        max-width: 100%;
+    }
+}
